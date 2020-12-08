@@ -32,7 +32,7 @@ output {
   stdout{}
    java_output_example {
         flush_size => 1000
-        connection_string  => "jdbc:mysql://am-bp174u81yj0ydbbdh90650.ads.aliyuncs.com:3306/tanwan_datahub_test?user=zeda_loghub_rw&password=NSGtunp4ODUfpeKA"
+        connection_string  => "jdbc:mysql://XXXXX:3306/tanwan_datahub_test?user=XXXXX&password=XXXXX"
         statement => "INSERT INTO tanwan_datahub_test.v2_dim_agent_id(
                 agent_id,agent_name,platform,insert_time,update_time)
                 value({agent_id},{agent_name},{platform},DEFAULT,DEFAULT)"
