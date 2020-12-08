@@ -16,7 +16,7 @@ public class PluginConfigParams {
             PluginConfigSpec.stringSetting("driver_class_name", "com.mysql.jdbc.Driver");
     /**
      * Connection URL
-     * eg. jdbc:mysql://XXXXX:3306/tanwan_datahub_test?user=XXXX&password=XXXXX
+     * eg. jdbc:mysql://XXXXX:3306/datahub_test?user=XXXX&password=XXXXX
      */
     public static final PluginConfigSpec<String> CONNECTION_STRING =
             PluginConfigSpec.stringSetting("connection_string", "", false, true);

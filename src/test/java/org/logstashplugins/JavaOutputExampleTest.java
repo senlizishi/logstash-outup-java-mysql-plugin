@@ -13,8 +13,8 @@ public class JavaOutputExampleTest {
     @Test
     public void testJavaOutputExample() {
         String driverClass = "com.mysql.jdbc.Driver";
-        String connectionString = "jdbc:mysql://XXXXXXXX:3306/tanwan_datahub_test?user=XXXXXX&password=XXXXXXX";
-        String statement = "INSERT INTO tanwan_datahub_test.v2_dim_agent_id(\n" +
+        String connectionString = "jdbc:mysql://XXXXXXXX:3306/datahub_test?user=XXXXXX&password=XXXXXXX";
+        String statement = "INSERT INTO datahub_test.v2_dim_agent_id(\n" +
                 "\tmedia_type_id,\n" +
                 "\tmedia_type_name,\n" +
                 "\tagent_group_id,\n" +
