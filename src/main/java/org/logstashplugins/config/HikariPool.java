@@ -24,7 +24,6 @@ public class HikariPool {
         dataSource = new HikariDataSource();
         dataSource.setDriverClassName(configuration.get(PluginConfigParams.DRIVER_CLASS));
         dataSource.setJdbcUrl(configuration.get(PluginConfigParams.CONNECTION_STRING));
-        dataSource.setAutoCommit(true);
         dataSource.setConnectionTimeout(Long.parseLong(configuration.get(PluginConfigParams.CONNECTION_TIMEOUT)));
         dataSource.setMaximumPoolSize(Integer.parseInt(configuration.get(PluginConfigParams.MAX_POOL_SIZE)));
     }

@@ -167,6 +167,7 @@ public class JavaOutputExample implements Output {
         Connection conn = null;
         try {
             conn = HikariPool.getConnection();
+            conn.setAutoCommit(false);
             // deal prepareStatement
             DealedStatement ds = dealStatement(statement);
             fields = ds.getFields();
@@ -181,6 +182,7 @@ public class JavaOutputExample implements Output {
             }
             // Batch processing
             pstm.executeBatch();
+            conn.commit();
             return true;
         } catch (Exception e) {
             e.printStackTrace();
